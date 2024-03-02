@@ -1,0 +1,36 @@
+<header class="site-header">
+    <div class="logo-container">
+        <a href="/">
+            <img src="/images/forkast_logo.png" alt="ForKast Logo" class="logo">
+        </a>
+    </div>
+    <div class="search-container-header">
+        <input type="search" class="search-box-header" placeholder="Search...">
+        <button class="search-button-header">Search</button>
+    </div>
+    <nav class="profile-nav">
+        <a href="/profile">
+            <img src="/images/profile-placeholder.png" alt="Profile Picture" class="profile-image"/>
+        </a>
+    </nav>
+</header>
+<main class="main-content">
+    <section class="action-section">
+        <a href="/search">
+            <button class="btn create-review">Create Review</button>
+        </a>
+        <button class="btn view-review">View Review</button>
+    </section>
+    <section class="restaurants-overview">
+        <div class="restaurants-container">
+            {{#each restaurants}}
+                <div class="restaurant-item">
+                    <a href="{{this.reviewPageUrl}}">
+                        <img src="{{this.imageUrl}}" alt="{{this.name}} Logo" class="restaurant-logo"/> 
+                        <p>{{this.name}}</p>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </section>
+</main>
