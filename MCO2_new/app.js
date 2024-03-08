@@ -17,6 +17,13 @@ server.engine('hbs', handlebars.engine({
 server.use(express.static('public'));
 //End of set-up//
 
+//Add resto data module//
+const resto_data = require('./resto_data');
+
+//set const to the data
+const resto_info = resto_data.restaurant_details;
+
+
 //Render Home page (start)//
 server.get('/', function(req, resp){
     //render the home.html
@@ -49,7 +56,8 @@ server.get('/home/', function(req, resp){
     //render the search-page.html
     resp.render('home',{
         layout: 'index-home',
-        title: 'Forkast Home Page'
+        title: 'Forkast Home Page',
+        resto_info: resto_info
     });
 });
 
@@ -61,8 +69,6 @@ server.get('/search/', function(req, resp){
         title: 'Search Page'
     });
 });
-
-
 
 
 
