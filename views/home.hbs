@@ -1,36 +1,38 @@
-<header class="site-header">
-    <div class="logo-container">
-        <a href="/">
-            <img src="/images/forkast_logo.png" alt="ForKast Logo" class="logo">
-        </a>
-    </div>
-    <div class="search-container-header">
-        <input type="search" class="search-box-header" placeholder="Search...">
-        <button class="search-button-header">Search</button>
-    </div>
-    <nav class="profile-nav">
-        <a href="/profile">
-            <img src="/images/profile-placeholder.png" alt="Profile Picture" class="profile-image"/>
-        </a>
-    </nav>
-</header>
-<main class="main-content">
-    <section class="action-section">
-        <a href="/search">
-            <button class="btn create-review">Create Review</button>
-        </a>
-        <button class="btn view-review">View Review</button>
-    </section>
-    <section class="restaurants-overview">
-        <div class="restaurants-container">
-            {{#each restaurants}}
+ <header class="site-header">
+        <div class="logo-container">
+            <a href="mco1home.html">
+                <img src="forkast_logo.png" alt="ForKast Logo" class="logo">
+            </a>
+        </div>
+        <div class="search-container-header">
+            <input type="search" class="search-box-header" placeholder="Search...">
+            <a href="/home"> <!--Ajax part-->
+            <button class="search-button-header">Search</button>
+            </a>
+        </div>
+        <nav class="profile-nav">
+            <a href="profile.html">
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Profile Picture" class="profile-image"/>
+            </a>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="action-section">
+            <a href = "/search">
+                <button class="btn create-review">Create Review</button>
+                 <button class="btn view-review">View Review</button>
+            </a>
+        </section>
+        <section class="restaurants-overview">
+            <div class="restaurants-container">
+                {{#each resto_info}}
                 <div class="restaurant-item">
-                    <a href="{{this.reviewPageUrl}}">
-                        <img src="{{this.imageUrl}}" alt="{{this.name}} Logo" class="restaurant-logo"/> 
-                        <p>{{this.name}}</p>
+                    <a href="/review_page/{{resto_name}}">
+                        <img src="{{resto_pic}}" alt="{{resto_name}}_Logo" class="restaurant-logo"/> 
+                        <p>{{resto_name}}</p>
                     </a>
                 </div>
-            {{/each}}
-        </div>
-    </section>
-</main>
+                {{/each}}
+            </div>
+        </section>
+    </main>
