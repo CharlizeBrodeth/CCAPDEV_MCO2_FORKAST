@@ -70,10 +70,20 @@ server.get('/search/', function(req, resp){
     });
 });
 
+//Render See Reviews of Restaurants//
+server.get('/review_page/:name/', function(req, resp){
+    //console.log(req.params.name)
+    //render restaurant_reviews.html
+    resp.render('reviews',{
+        layout: 'index-reviews',
+        title: 'Review Page',
+        resto_name: req.params.name
+    });
+});
 
 
 //Port//
-const port = process.env.port || 9090;
+const port = process.env.port || 3000;
 server.listen(port, function(){
     console.log('listening at port' +port);
 });
