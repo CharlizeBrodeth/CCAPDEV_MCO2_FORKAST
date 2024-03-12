@@ -1,18 +1,23 @@
  <div class="main-container">
         <aside class="image_section">
-            <img class="image_resto" src="https://bonchon.com.ph/storage/cms_images/w5tqdY0UDg230L8qO8BErmFcOq87F1BgqmSxWtgQ.jpg" alt="Bonchon Restaurant">
-            <div class="text_format">{{resto_name}}</div>
+            <img class="image_resto" src="{{resto_image}}" alt="{{restoName}} Restaurant">
+            <div class="text_format">{{restoName}}</div>
+
+            <a href ="/home">
+                <button class="back-btn">Go back to homepage</button>
+                </a>
         </aside>
         <div class="reviews-container">
             <div class="review-box review-box-title">SEE REVIEWS</div>
             <!-- Repeat this structure for each review -->
+            {{#each reviews_list}}
             <div class="review-box-whole">
                 <div class="review-box">
-                    <img class="review-box-image" src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671120.jpg?w=740&t=st=1707668035~exp=1707668635~hmac=57d73cb3e14dcb651c93ab97e287ede94966894fa804dbcc5fbc3fd5da4079ea" alt="foodprincess22-pfp">
+                    <img class="review-box-image" src="https://surgassociates.com/wp-content/uploads/610-6104451_image-placeholder-png-user-profile-placeholder-image-png.jpg" alt="{{user_name}}">
                     <div class="review-des">
-                        <div class="review-text review-text-des">from @foodPrincess22</div>
-                        <div class="review-text">Crispy Korean Chicken Mastery</div>
-                        <div class="review-text review-text-des">Bonchon excels in serving up irresistibly crispy Korean fried chicken, coated in mouthwatering sauces that keep you coming back for more.</div>
+                        <div class="review-text review-text-des">from {{user_name}}</div>
+                        <div class="review-text">{{review_title}}</div>
+                        <div class="review-text review-text-des">{{review_desc}}</div>
                     </div>
                     <button class="up-vote-btn" title="Upvote Review">👍</button>
                     <button class="down-vote-btn" title="Downvote Review">👎</button>
@@ -28,103 +33,8 @@
                     <button class="view-post-btn" title="Click to view whole post">view post</button>
                 </a>
 
-            <!--Copy paste ends here-->
-            </div>
-            <div class="review-box-whole">
-                <div class="review-box">
-                    <img class="review-box-image" src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671140.jpg?w=740&t=st=1707668195~exp=1707668795~hmac=a7a18ed8eb6eec4f696ea5cf13979deec502907349b52385992af86350f4cade" alt="foodLover25-pfp">
-                    <div class="review-des">
-                        <div class="review-text review-text-des">from @foodLover25</div>
-                        <div class="review-text">Flavor Explosion, Service with Devotion</div>
-                        <div class="review-text review-text-des">Each bite of Bonchon's chicken is a flavor explosion, complemented by attentive and quick service, making every visit a pleasure.</div>
-                    </div>
-                    <button class="up-vote-btn" title="Upvote Review">👍</button>
-                    <button class="down-vote-btn" title="Downvote Review">👎</button>
-                    <div class="star-rating-display">
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span> 
-                    </div>
-                </div>
-                <a href="profile2.html">
-                    <button class="view-post-btn" title="Click to view whole post">view post</button>
-                </a>
-
-            </div>
-            <div class="review-box-whole">
-                <div class="review-box">
-                    <img class="review-box-image" src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671138.jpg?w=740&t=st=1707668080~exp=1707668680~hmac=c0361983f02bb36ee94318c65b52d6864e6600544d90bdb9fe945b56d2fc5bc5" alt="taraFoodTrip-pfp">
-                    <div class="review-des">
-                        <div class="review-text review-text-des">from @taraFoodTrip</div>
-                        <div class="review-text">Sides and Sauces Shine Bright</div>
-                        <div class="review-text review-text-des">Beyond the chicken, Bonchon's sides and unique sauces add depth and diversity to the dining experience, elevating simple meals into memorable ones.</div>
-                    </div>
-                    <button class="up-vote-btn" title="Upvote Review">👍</button>
-                    <button class="down-vote-btn" title="Downvote Review">👎</button>
-                    <div class="star-rating-display">
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span> 
-                    </div>
-                </div>
-                <a href="profile3.html">
-                    <button class="view-post-btn" title="Click to view whole post">view post</button>
-                </a>
-
-            </div>
-            <div class="review-box-whole">
-                <div class="review-box">
-                    <img class="review-box-image" src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671116.jpg?w=740&t=st=1707668149~exp=1707668749~hmac=c4c917e8e502e549841d195308448906cb38159adc5175a7b1725aeb469118e2" alt="yourFoodieBestie-pfp">
-                    <div class="review-des">
-                        <div class="review-text review-text-des">from @yourFoodieBestie</div>
-                        <div class="review-text">Consistency is Key, and Bonchon Delivers</div>
-                        <div class="review-text review-text-des">With its consistent quality and taste, Bonchon sets the standard for Korean fried chicken, ensuring satisfaction in every meal.</div>
-                    </div>
-                    <button class="up-vote-btn" title="Upvote Review">👍</button>
-                    <button class="down-vote-btn" title="Downvote Review">👎</button>
-                    <div class="star-rating-display">
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span> 
-                    </div>
-                </div>
-                <a href="profile4.html">
-                    <button class="view-post-btn" title="Click to view whole post">view post</button>
-                </a>
-
-            </div>
-            <div class="review-box-whole">
-                <div class="review-box">
-                    <img class="review-box-image" src="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?w=740&t=st=1707667975~exp=1707668575~hmac=348489e82f904f2b39d730324ab8eb9f5a127e6e5074f16640794cb1828ba3e8" alt="foodEnthusiast04-pfp">
-                    <div class="review-des">
-                        <div class="review-text review-text-des">from @foodEnthusiast04</div>
-                        <div class="review-text">A Culinary Hit, Occasionally Missed Connections</div>
-                        <div class="review-text review-text-des">While Bonchon's culinary offerings hit the mark, occasional lapses in order accuracy can detract from the overall exceptional experience.</div>
-                    </div>
-                    <button class="up-vote-btn" title="Upvote Review">👍</button>
-                    <button class="down-vote-btn" title="Downvote Review">👎</button>
-                    <div class="star-rating-display">
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star">&#9733;</span>
-                        <span class="star grey">&#9733;</span>
-                        <span class="star grey">&#9733;</span> 
-                    </div>
-                </div>
-                <a href="profile5.html">
-                    <button class="view-post-btn" title="Click to view whole post">view post</button>
-                </a>
-   
-            </div>
         </div>
+        {{/each}}
     </div>
     
-    <a href = "/home">
-    <button class="back-btn">Go back to homepage</button>
-    </a>
+    

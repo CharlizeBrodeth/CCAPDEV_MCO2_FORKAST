@@ -1,30 +1,34 @@
 <body>
     <div class="register-container">
         <h1 class="register-title">REGISTER</h1>
-        <form class="register-form">
+        <form class="register-form" action="create_user" method="post">
             <div class="form-group">
                 <label for="family-name">Family Name *</label>
-                <input type="text" id="family-name" placeholder="Family Name" required>
+                <input type="text" name="fam_name" placeholder="Family Name" required>
             </div>
             <div class="form-group">
                 <label for="first-name">First Name *</label>
-                <input type="text" id="first-name" placeholder="First Name" required>
+                <input type="text" name="first_name" placeholder="First Name" required>
             </div>
             <div class="form-group">
                 <label for="username">Username *</label>
-                <input type="text" id="username" placeholder="Username" required>
+                <input type="text" name="user_name" placeholder="Username" required>
             </div>
             <div class="form-group">
                 <label for="screen-name">Screen Name *</label>
-                <input type="text" id="screen-name" placeholder="Screen Name" required>
+                <input type="text" name="screen_name" placeholder="Screen Name" required>
             </div>
             <div class="form-group">
                 <label for="birth-date">Birth Date *</label>
-                <input type="date" id="birth-date" required>
+                <input type="date" name="bday" required>
             </div>
             <div class="form-group">
                 <label for="email">Email *</label>
-                <input type="email" id="email" placeholder="Email" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" name="password" placeholder="Enter Password" required>
             </div>
             <div class="form-group form-group-checkbox">
                 <input type="checkbox" id="user-agreement" required>
@@ -41,7 +45,7 @@
                 </label>
             </div>
             <div class="form-group">
-                <a href="mco1home.html"><button type="submit" class="create-btn">Create</button></a>
+                <button type="submit" class="create-btn" value="submit_btn">Create</button>
             </div>
         </form>
     </div>
