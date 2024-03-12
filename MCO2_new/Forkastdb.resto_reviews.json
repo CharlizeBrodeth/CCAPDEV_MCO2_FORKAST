@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "65efecd3f8a5e6b0f530b587"
+  },
+  "user_name": "SarahB",
+  "resto_name": "Sandwhich Corner",
+  "review_title": "Best Sandwiches in Town!",
+  "review_desc": "I visited Sandwich Corner last week and was blown away by the quality of their sandwiches. The bread was perfectly toasted, and the balance of meats and veggies was spot on. Definitely coming back for more!",
+  "rating": 5
+},
+{
+  "_id": {
+    "$oid": "65efecd3f8a5e6b0f530b588"
+  },
+  "user_name": "EmilyJohnson",
+  "resto_name": "Sandwhich Corner",
+  "review_title": "Great Value for Money",
+  "review_desc": "The portions are generous, and the service is quick. A must-visit spot for sandwich lovers!",
+  "rating": 5
+},
+{
+  "_id": {
+    "$oid": "65efecd3f8a5e6b0f530b589"
+  },
+  "user_name": "JajaRamirezzz",
+  "resto_name": "Sandwhich Corner",
+  "review_title": "Good, But Room for Improvement",
+  "review_desc": "I was really looking forward to trying Sandwich Corner due to all the rave reviews. However, my experience was marred by slow service. The sandwich I ordered was delicious, no doubt, but waiting over 30 minutes for a sandwich when the place wasn't even that busy was a letdown.",
+  "rating": 3
+},
+{
+  "_id": {
+    "$oid": "65efecd3f8a5e6b0f530b58a"
+  },
+  "user_name": "EmilyJohnson",
+  "resto_name": "Happy and Healthy",
+  "review_title": " Nourishing and Delicious",
+  "review_desc": "Happy and Healthy lives up to its name! My order was a delightful blend of fresh vegetables, perfectly cooked quinoa, and a flavorful dressing. This restaurant is a haven for health-conscious foodies. Definitely my go-to spot for a nutritious meal.",
+  "rating": 5
+},
+{
+  "_id": {
+    "$oid": "65efecd3f8a5e6b0f530b58b"
+  },
+  "user_name": "SarahB",
+  "resto_name": "Happy and Healthy",
+  "review_title": "Underwhelmed and Overpriced",
+  "review_desc": "I had high expectations for Happy and Healthy based on its name and concept, but my experience fell short. The ambiance of the restaurant is pleasant, but that does not compensate for the lackluster meal and the hit to my wallet.",
+  "rating": 2
+}]
